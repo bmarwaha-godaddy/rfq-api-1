@@ -1,8 +1,8 @@
 name: Release OpenAPI
 on:
-      push:
-      tags:
-        - 'v[0-9]+.[0-9]+.[0-9]+'
+  push:
+  tags:
+    - 'v[0-9]+.[0-9]+.[0-9]+'
 
 env:
   GH_TOKEN: ${{ github.token }}
@@ -10,5 +10,5 @@ jobs:
   Release:
   runs-on: ubuntu-latest
   steps:
-         - uses: actions/checkout@v4
-         - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api- v1.oas.yml#OpenAPI"
+    - uses: actions/checkout@v4
+    - run: gh release create --generate-notes "${{ github.ref_name }}" "rfq-api- v1.oas.yml#OpenAPI"
