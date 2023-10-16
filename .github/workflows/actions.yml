@@ -3,7 +3,8 @@ on:
       - push
 jobs:
 Checks:
-  runs-on: ubuntu-latest steps
+  runs-on: ubuntu-latest 
+  steps:
          - uses: actions/checkout@v4
          - uses: actions/setup-node@v3
          - run:   npm install -g @stoplight/spectral-cli
