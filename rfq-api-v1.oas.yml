@@ -23,8 +23,8 @@ components:
         type: object
         properties:
            id:
-            type: uuid
-            format: string
+            type: string
+            format: uuid
            product:
               type: string
               maxLength: 20
