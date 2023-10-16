@@ -25,6 +25,7 @@ components:
            id:
             type: string
             format: uuid
+
            product:
               type: string
               maxLength: 20
